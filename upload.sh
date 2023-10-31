@@ -1,4 +1,10 @@
 #!/bin/sh
+function log () {
+
+    echo "[`date +%F-%T`] $1" >> $LOGDIR/platform.log
+}
+
+
 upload()
 {
         project_root=$1
